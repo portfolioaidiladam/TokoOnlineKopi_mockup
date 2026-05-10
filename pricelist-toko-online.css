@@ -250,7 +250,7 @@ footer{background:var(--ink);color:var(--paper);padding:84px 36px 36px}
 /* CHECKOUT MODAL */
 .modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;z-index:300;opacity:0;pointer-events:none;transition:opacity .3s;padding:24px}
 .modal.show{opacity:1;pointer-events:auto}
-.modal-card{width:min(880px,100%);max-height:90vh;background:var(--paper);border-radius:8px;overflow:hidden;display:grid;grid-template-columns:1.05fr .95fr;transform:translateY(20px) scale(.98);transition:transform .35s cubic-bezier(.4,0,.2,1);box-shadow:0 50px 100px rgba(0,0,0,.4)}
+.modal-card{width:min(880px,100%);max-height:90vh;background:var(--paper);border-radius:8px;overflow-y:auto;display:grid;grid-template-columns:1.05fr .95fr;transform:translateY(20px) scale(.98);transition:transform .35s cubic-bezier(.4,0,.2,1);box-shadow:0 50px 100px rgba(0,0,0,.4)}
 .modal.show .modal-card{transform:translateY(0) scale(1)}
 .ck-left{padding:36px 36px 32px;background:var(--bg-deep);display:flex;flex-direction:column;gap:18px}
 .ck-step{font-family:'DM Mono',monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint)}
