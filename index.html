@@ -598,6 +598,18 @@
 
     renderProducts();
     syncCart();
+
+    // ----- Sticky nav scroll shadow -----
+    (function navScroll(){
+        const nav = document.querySelector('nav.site');
+        if(!nav) return;
+        const onScroll = () => {
+            if(window.scrollY > 8) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
+        };
+        window.addEventListener('scroll', onScroll, {passive:true});
+        onScroll();
+    })();
 </script>
 
 <!-- WATERMARK -->
