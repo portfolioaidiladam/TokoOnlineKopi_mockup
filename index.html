@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kopi Nusa — Specialty Coffee Roastery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="pricelist-toko-online.css">
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+    <div class="marquee">
+        <span>✦ Free shipping for orders above Rp 200.000</span>
+        <span>✦ Roasted weekly in Bandung</span>
+        <span>✦ Single origin from 8 regions</span>
+        <span>✦ Pay with QRIS · GoPay · OVO · DANA</span>
+        <span>✦ Free shipping for orders above Rp 200.000</span>
+        <span>✦ Roasted weekly in Bandung</span>
+        <span>✦ Single origin from 8 regions</span>
+        <span>✦ Pay with QRIS · GoPay · OVO · DANA</span>
+    </div>
+</div>
+
+<!-- NAV -->
+<nav class="site">
+    <div class="logo">
+        <span class="logo-mark"></span>
+        <div>KOPI NUSA<small>Roastery · Bandung</small></div>
+    </div>
+    <div class="nav-links">
+        <a href="#shop">Beans</a>
+        <a href="#origin">Origins</a>
+        <a href="#qris">Subscription</a>
+        <a href="#journal">Journal</a>
+        <a href="#">Our Story</a>
+    </div>
+    <div class="nav-actions">
+        <button class="icon-btn" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+        <button class="icon-btn" aria-label="Account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4.5 5-6 8-6s6.5 1.5 8 6"/></svg></button>
+        <button class="icon-btn" id="openCart" aria-label="Cart">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 7h14l-1.5 11a2 2 0 0 1-2 1.7H8.5a2 2 0 0 1-2-1.7L5 7z"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/></svg>
+            <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-grid">
+        <div>
+            <div class="hero-tag">Est. 2019 · Bandung, Indonesia</div>
+            <h1 class="hero-title">Sip the<br/><em>archipelago,</em><br/>one bean at a time.</h1>
+            <p class="hero-desc">Specialty single-origin coffee, hand-picked from eight regions across Indonesia. Roasted in small batches, shipped within 48 hours of roasting — straight to your door.</p>
+            <div class="hero-actions">
+                <a href="#shop" class="btn btn-primary">Shop the collection</a>
+                <a href="#qris" class="btn btn-text">See QRIS checkout</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hv-img"></div>
+            <div class="hv-bean"></div>
+            <div class="hv-tape"></div>
+            <div class="hv-corner">N° 001 / MMXXVI</div>
+            <div class="hv-stats">
+                <strong>4.9</strong>
+                <span>★★★★★ · 2,847 reviews</span>
+            </div>
+            <div class="hv-meta">
+                <span>Vol. May / 2026</span>
+                <span>Roasted 10·05·26</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCTS / SHOP -->
+<section id="shop">
+    <div class="section-inner">
+        <div class="section-head">
+            <div>
+                <div class="section-label">Featured roasts</div>
+                <h2 class="section-title">This month's <em>harvest</em>.</h2>
+            </div>
+            <a href="#" class="btn btn-text">View all 24 beans</a>
+        </div>
+        <div class="filter-row">
+            <button class="chip on">All beans</button>
+            <button class="chip">Filter / Pour over</button>
+            <button class="chip">Espresso</button>
+            <button class="chip">Decaf</button>
+            <button class="chip">Subscription only</button>
+            <button class="chip">Light roast</button>
+            <button class="chip">Dark roast</button>
+        </div>
+        <div class="products" id="productGrid"></div>
+    </div>
+</section>
+
+<!-- ORIGIN MAP -->
+<section class="origin" id="origin">
+    <div class="origin-grid">
+        <div>
+            <div class="section-label">Single origin</div>
+            <h2>Eight regions.<br/><em>One archipelago.</em></h2>
+            <p>From the misty highlands of Gayo to the volcanic slopes of Flores, our beans tell the story of Indonesia's geography — soil, altitude, microclimate, hand-processed by farmer cooperatives we've worked with for years.</p>
+            <a href="#" class="btn btn-text">Read the journal</a>
+        </div>
+        <div class="region-list">
+            <div class="region"><div class="region-num">N° 01</div><div class="region-name">Gayo Highlands</div><div class="region-notes">cherry, cocoa, red wine</div><div class="region-alt">1450m</div></div>
+            <div class="region"><div class="region-num">N° 02</div><div class="region-name">Toraja Sapan</div><div class="region-notes">brown sugar, hazelnut, citrus</div><div class="region-alt">1700m</div></div>
+            <div class="region"><div class="region-num">N° 03</div><div class="region-name">Flores Bajawa</div><div class="region-notes">jasmine, honey, tropical</div><div class="region-alt">1500m</div></div>
+            <div class="region"><div class="region-num">N° 04</div><div class="region-name">Kintamani Bali</div><div class="region-notes">orange, vanilla, caramel</div><div class="region-alt">1300m</div></div>
+            <div class="region"><div class="region-num">N° 05</div><div class="region-name">Java Preanger</div><div class="region-notes">earth, dark chocolate</div><div class="region-alt">1400m</div></div>
+            <div class="region"><div class="region-num">N° 06</div><div class="region-name">Mandheling</div><div class="region-notes">cedar, tobacco, syrup</div><div class="region-alt">1200m</div></div>
+            <div class="region"><div class="region-num">N° 07</div><div class="region-name">Wamena Papua</div><div class="region-notes">apple, milk chocolate</div><div class="region-alt">1600m</div></div>
+            <div class="region"><div class="region-num">N° 08</div><div class="region-name">Kerinci Jambi</div><div class="region-notes">peach, cane sugar, floral</div><div class="region-alt">1550m</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- QRIS -->
+<section class="qris-section" id="qris">
+    <div class="section-inner">
+        <div class="section-head">
+            <div>
+                <div class="section-label">Checkout in seconds</div>
+                <h2 class="section-title">One scan.<br/><em>That's it.</em></h2>
+            </div>
+            <button class="btn btn-primary is-invert" id="demoCheckout">Try the demo</button>
+        </div>
+        <div class="qris-grid">
+            <div class="qris-copy">
+                <h3>Pay your way, <em>instantly.</em></h3>
+                <p>Powered by Midtrans, Kopi Nusa accepts every major Indonesian payment method. QRIS makes it effortless — point, scan, sip. No cards, no logins, no friction.</p>
+                <div class="pay-grid">
+                    <div class="pay-pill qris">QRIS</div>
+                    <div class="pay-pill">GoPay</div>
+                    <div class="pay-pill">OVO</div>
+                    <div class="pay-pill">DANA</div>
+                    <div class="pay-pill">ShopeePay</div>
+                    <div class="pay-pill">BCA VA</div>
+                    <div class="pay-pill">Mandiri</div>
+                    <div class="pay-pill">BRI</div>
+                    <div class="pay-pill">BNI</div>
+                    <div class="pay-pill">CIMB</div>
+                    <div class="pay-pill">Permata</div>
+                    <div class="pay-pill">Credit</div>
+                </div>
+                <div class="qris-trust">
+                    <span>PCI-DSS</span>
+                    <span>BI-Licensed</span>
+                    <span>Midtrans Secured</span>
+                </div>
+            </div>
+            <!-- Phone mockup -->
+            <div class="phone">
+                <div class="phone-screen">
+                    <div class="ps-status"><span>9:41</span><span>● ● ● 5G</span></div>
+                    <div class="ps-head">
+                        <div class="ps-head-left">← Checkout</div>
+                        <div class="ps-head-left ps-head-step">Step 3 of 3</div>
+                    </div>
+                    <div class="ps-body">
+                        <div class="ps-merchant">Kopi Nusa Roastery</div>
+                        <div class="ps-order">Order #KN-2840 · 2 items</div>
+                        <div class="ps-amount">Rp 310.000</div>
+                        <div class="ps-amount-sub">incl. VAT · free shipping applied</div>
+                        <div class="ps-qris">
+                            <div class="ps-qris-grid" id="phoneQris"></div>
+                            <div class="ps-qris-logo">QRIS</div>
+                        </div>
+                        <div class="ps-timer">Expires in <strong>14:32</strong></div>
+                    </div>
+                    <div class="ps-foot">
+                        <span>Powered by Midtrans</span>
+                        <span>● Secure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JOURNAL -->
+<section id="journal">
+    <div class="section-inner">
+        <div class="section-head">
+            <div>
+                <div class="section-label">From the Journal</div>
+                <h2 class="section-title">Brewing <em>notes</em>.</h2>
+            </div>
+            <a href="#" class="btn btn-text">All articles</a>
+        </div>
+        <div class="editorial">
+            <article class="ed">
+                <div class="ed-img"><div class="ed-cat">Brew Guide</div><div class="ed-img-label">Fig. 01 · pour over</div></div>
+                <div class="ed-info">
+                    <div class="ed-meta">May 02 · 6 min read</div>
+                    <div class="ed-title">The four-pour V60: a primer for first-time brewers</div>
+                    <div class="ed-desc">Bloom, ratio, agitation, pour pattern — the fundamentals you need before you chase fancy techniques.</div>
+                </div>
+            </article>
+            <article class="ed">
+                <div class="ed-img"><div class="ed-cat">Origin</div><div class="ed-img-label">Fig. 02 · gayo</div></div>
+                <div class="ed-info">
+                    <div class="ed-meta">Apr 24 · 9 min read</div>
+                    <div class="ed-title">Inside Gayo: the cooperative that quietly built a wine process</div>
+                    <div class="ed-desc">A dispatch from Aceh's highlands, where extended fermentation is rewriting what Sumatran coffee can taste like.</div>
+                </div>
+            </article>
+            <article class="ed">
+                <div class="ed-img"><div class="ed-cat">Roasting</div><div class="ed-img-label">Fig. 03 · drum</div></div>
+                <div class="ed-info">
+                    <div class="ed-meta">Apr 11 · 4 min read</div>
+                    <div class="ed-title">Why we roast on Tuesdays (and ship on Wednesdays)</div>
+                    <div class="ed-desc">Coffee is best between 7 and 21 days off-roast. Our weekly cadence is built around exactly that window.</div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-grid">
+        <div>
+            <div class="footer-big">Stay <em>brewed</em> in.</div>
+            <p class="footer-lede">Get 10% off your first order, plus brewing tips and new harvest announcements straight to your inbox.</p>
+            <form class="news-form" onsubmit="event.preventDefault();showToast('You\'re on the list ☕');this.reset()">
+                <input class="news-input" type="email" required placeholder="your@email.com" />
+                <button class="news-btn" type="submit">Join</button>
+            </form>
+        </div>
+        <div class="footer-col">
+            <h4>Shop</h4>
+            <a href="#">All beans</a>
+            <a href="#">Subscription</a>
+            <a href="#">Gift sets</a>
+            <a href="#">Equipment</a>
+        </div>
+        <div class="footer-col">
+            <h4>Learn</h4>
+            <a href="#">Brew guides</a>
+            <a href="#">Origin stories</a>
+            <a href="#">Journal</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <a href="#"><span class="__cf_email__" data-cfemail="92faf7fefefdd2f9fde2fbfce7e1f3bcfbf6">[email&#160;protected]</span></a>
+            <a href="#">+62 22 5555 0199</a>
+            <a href="#">@kopinusa</a>
+            <a href="#">Wholesale</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2026 Kopi Nusa Roastery</span>
+        <span>Built with care · Bandung, ID</span>
+        <span>Powered by Midtrans</span>
+    </div>
+</footer>
+
+<!-- CART DRAWER -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Cart">
+    <div class="drawer-head">
+        <h3>Your bag <span class="mono bag-count" id="bagCount"></span></h3>
+        <button class="close-btn" onclick="closeCart()">✕</button>
+    </div>
+    <div class="drawer-body" id="drawerBody"></div>
+    <div class="drawer-foot" id="drawerFoot"></div>
+</aside>
+
+<!-- CHECKOUT MODAL -->
+<div class="modal" id="checkoutModal" role="dialog" aria-label="Checkout">
+    <div class="modal-card" id="checkoutCard"></div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">Added to bag</div>
+
+<!-- ===================== JS ===================== -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    const PRODUCTS = [
+        {id:'gayo',  origin:'Aceh · Gayo Highlands', name:'Gayo Wine Process', notes:'Notes of dark cherry, cocoa, red wine', price:145000, tag:'Best seller', tagClass:'',     roast:3},
+        {id:'tora',  origin:'Toraja · Sapan Village', name:'Toraja Sapan',     notes:'Brown sugar, hazelnut, citrus',         price:165000, tag:'New',         tagClass:'new',  roast:2},
+        {id:'flor',  origin:'Flores · Bajawa',        name:'Bajawa Natural',   notes:'Jasmine, honey, tropical fruit',         price:155000, tag:'',            tagClass:'',     roast:2},
+        {id:'bali',  origin:'Bali · Kintamani',       name:'Kintamani Orange', notes:'Orange peel, vanilla, caramel',          price:138000, tag:'Subs',        tagClass:'leaf', roast:2},
+        {id:'java',  origin:'Java · Preanger',        name:'Preanger Dark',    notes:'Earth, dark chocolate, smoke',           price:128000, tag:'',            tagClass:'',     roast:4},
+        {id:'mand',  origin:'Sumatra · Mandheling',   name:'Mandheling Estate',notes:'Cedar, tobacco, brown syrup',            price:135000, tag:'Best seller', tagClass:'',     roast:4},
+        {id:'wam',   origin:'Papua · Wamena',         name:'Wamena Honey',     notes:'Green apple, milk chocolate',            price:170000, tag:'Limited',     tagClass:'leaf', roast:2},
+        {id:'ker',   origin:'Sumatra · Kerinci',      name:'Kerinci Floral',   notes:'Peach, cane sugar, floral',              price:148000, tag:'New',         tagClass:'new',  roast:1},
+    ];
+
+    const fmt = n => 'Rp ' + n.toLocaleString('id-ID');
+    const $ = s => document.querySelector(s);
+    const $$ = s => Array.from(document.querySelectorAll(s));
+
+    // ----- Render product grid -----
+    function renderProducts(){
+        const grid = $('#productGrid');
+        grid.innerHTML = PRODUCTS.map(p => `
+    <article class="product" data-id="${p.id}" tabindex="0">
+      <div class="product-img">
+        <div class="pi-fill"></div>
+        <div class="pi-stripes"></div>
+        <div class="pi-bean"></div>
+        ${p.tag ? `<span class="product-tag ${p.tagClass}">${p.tag}</span>` : ''}
+        <div class="pi-label">${p.id} · 200g whole bean</div>
+      </div>
+      <div class="product-info">
+        <div class="product-origin">${p.origin}</div>
+        <div class="product-name">${p.name}</div>
+        <div class="roast-meter" title="Roast level">
+          ${[1,2,3,4,5].map(i=>`<span class="roast-dot ${i<=p.roast?'on':''}"></span>`).join('')}
+        </div>
+        <div class="product-notes">${p.notes}</div>
+        <div class="product-foot">
+          <div class="product-price">${fmt(p.price)} <small>/ 200g</small></div>
+          <button class="add-btn" data-add="${p.id}" aria-label="Add">+</button>
+        </div>
+      </div>
+    </article>
+  `).join('');
+        grid.querySelectorAll('[data-add]').forEach(btn => {
+            btn.addEventListener('click', e => {
+                e.stopPropagation();
+                const id = btn.dataset.add;
+                addToCart(id);
+                btn.classList.add('added');
+                btn.textContent = '✓';
+                setTimeout(()=>{btn.classList.remove('added');btn.textContent='+'}, 1300);
+            });
+        });
+    }
+
+    // ----- Cart state -----
+    let cart = []; // [{id, qty}]
+    function cartCount(){ return cart.reduce((s,i)=>s+i.qty, 0); }
+    function cartSubtotal(){ return cart.reduce((s,i)=>{ const p = PRODUCTS.find(x=>x.id===i.id); return s + p.price*i.qty; },0); }
+    function cartItems(){ return cart.map(i => ({...PRODUCTS.find(x=>x.id===i.id), qty:i.qty})); }
+
+    function addToCart(id, qty=1){
+        const ex = cart.find(i=>i.id===id);
+        if(ex) ex.qty += qty; else cart.push({id, qty});
+        syncCart();
+        showToast('Added to bag');
+    }
+    function removeFromCart(id){ cart = cart.filter(i=>i.id!==id); syncCart(); }
+    function setQty(id,d){
+        const i = cart.find(x=>x.id===id);
+        if(!i) return;
+        i.qty = Math.max(0, i.qty+d);
+        if(i.qty===0) cart = cart.filter(x=>x.id!==id);
+        syncCart();
+    }
+
+    function syncCart(){
+        const c = cartCount();
+        $('#cartBadge').textContent = c;
+        $('#cartBadge').style.display = c>0 ? 'flex' : 'none';
+        renderDrawer();
+    }
+
+    // ----- Drawer -----
+    function openCart(){ $('#scrim').classList.add('show'); $('#drawer').classList.add('open'); }
+    function closeCart(){ $('#scrim').classList.remove('show'); $('#drawer').classList.remove('open'); }
+    $('#openCart').addEventListener('click', ()=>{ openCart(); });
+    $('#scrim').addEventListener('click', closeCart);
+
+    function renderDrawer(){
+        const items = cartItems();
+        $('#bagCount').textContent = items.length ? `(${cartCount()})` : '';
+        const body = $('#drawerBody');
+        if(items.length===0){
+            body.innerHTML = `<div class="cart-empty">
+      <div class="cart-empty-icon">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 7h14l-1.5 11a2 2 0 0 1-2 1.7H8.5a2 2 0 0 1-2-1.7L5 7z"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/></svg>
+      </div>
+      <div class="display">Your bag is empty</div>
+      <p>Add a bag of beans and we'll roast them this week.</p>
+    </div>`;
+            $('#drawerFoot').innerHTML = '';
+            return;
+        }
+        body.innerHTML = items.map(i => `
+    <div class="cart-item">
+      <div class="ci-img"></div>
+      <div>
+        <div class="ci-name">${i.name}</div>
+        <div class="ci-origin">${i.origin}</div>
+        <div class="qty">
+          <button onclick="setQty('${i.id}',-1)">–</button>
+          <span>${i.qty}</span>
+          <button onclick="setQty('${i.id}',1)">+</button>
+        </div>
+      </div>
+      <div>
+        <div class="ci-price">${fmt(i.price*i.qty)}</div>
+        <button class="ci-remove" onclick="removeFromCart('${i.id}')">Remove</button>
+      </div>
+    </div>
+  `).join('');
+        const sub = cartSubtotal();
+        const ship = sub >= 200000 ? 0 : 18000;
+        const tot = sub + ship;
+        $('#drawerFoot').innerHTML = `
+    <div class="totals">
+      <div class="totals-row"><span>Subtotal</span><span>${fmt(sub)}</span></div>
+      <div class="totals-row"><span>Shipping ${sub>=200000?'(free)':'(JNE Reguler)'}</span><span>${ship===0?'Free':fmt(ship)}</span></div>
+      <div class="totals-row grand"><span>Total</span><span>${fmt(tot)}</span></div>
+    </div>
+    <button class="checkout-btn" onclick="openCheckout()">Checkout with QRIS <span>→</span></button>
+  `;
+    }
+
+    // ----- Toast -----
+    let toastT;
+    function showToast(msg){ const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toastT); toastT = setTimeout(()=>t.classList.remove('show'), 1800); }
+
+    // ----- Checkout modal -----
+    let pmActive = 'qris';
+    let timerInt;
+    let timerSecs = 14*60+32;
+
+    function openCheckout(){
+        if(cart.length===0){
+            addToCart('gayo'); addToCart('tora'); // demo seed
+        }
+        closeCart();
+        const sub = cartSubtotal();
+        const ship = sub >= 200000 ? 0 : 18000;
+        const tot = sub + ship;
+        const orderId = 'KN-' + (2000 + Math.floor(Math.random()*900));
+        const items = cartItems();
+
+        $('#checkoutCard').innerHTML = `
+    <div class="ck-left">
+      <div class="ck-step">Order <strong>#${orderId}</strong> · Step 3 of 3</div>
+      <div class="ck-title">Choose how you<br/>want to pay.</div>
+      <div class="ck-summary">
+        ${items.map(i=>`<div class="ck-summary-row"><span>${i.qty}× ${i.name}</span><span>${fmt(i.price*i.qty)}</span></div>`).join('')}
+        <div class="ck-summary-row"><span>Shipping</span><span>${ship===0?'Free':fmt(ship)}</span></div>
+        <div class="ck-summary-row tot"><span>Total</span><span>${fmt(tot)}</span></div>
+      </div>
+      <div class="pay-methods" id="payMethods">
+        <label class="pay-method active" data-pm="qris"><span class="pay-radio"></span><span class="pay-method-icon">QR</span><div><div class="pay-method-name">QRIS</div><div class="pay-method-desc">All wallets · scan & pay</div></div></label>
+        <label class="pay-method" data-pm="gopay"><span class="pay-radio"></span><span class="pay-method-icon">GP</span><div><div class="pay-method-name">GoPay</div><div class="pay-method-desc">Open Gojek app</div></div></label>
+        <label class="pay-method" data-pm="ovo"><span class="pay-radio"></span><span class="pay-method-icon">OV</span><div><div class="pay-method-name">OVO</div><div class="pay-method-desc">Open OVO app</div></div></label>
+        <label class="pay-method" data-pm="bca"><span class="pay-radio"></span><span class="pay-method-icon">VA</span><div><div class="pay-method-name">BCA Virtual Account</div><div class="pay-method-desc">Transfer via m-Banking</div></div></label>
+        <label class="pay-method" data-pm="spay"><span class="pay-radio"></span><span class="pay-method-icon">SP</span><div><div class="pay-method-name">ShopeePay</div><div class="pay-method-desc">Open Shopee app</div></div></label>
+      </div>
+    </div>
+    <div class="ck-right">
+      <div class="ck-right-head">
+        <div>
+          <div class="ck-merch">Kopi Nusa Roastery</div>
+          <div class="ck-merch-sub">NMID · ID2026KOPINUSA01 · MID 5024</div>
+        </div>
+        <div class="ck-amount">
+          <strong>${fmt(tot)}</strong>
+          <span>Order #${orderId}</span>
+        </div>
+      </div>
+      <div class="qris-card">
+        <div class="qris-card-head">
+          <div class="qris-logo-text">QRIS</div>
+          <div class="qris-card-mid">National Standard · BI</div>
+        </div>
+        <div class="qris-img" id="qrisImg"></div>
+        <div class="qris-card-foot">
+          <span>Expires in <strong id="qrTimer">14:32</strong></span>
+          <span>Static · Rp denomination</span>
+        </div>
+      </div>
+      <div class="ck-help">Open any e-wallet, scan, and confirm.<br/>You'll see the receipt within seconds.</div>
+      <div class="ck-actions">
+        <button class="ck-cancel" onclick="closeCheckout()">Cancel</button>
+        <button class="ck-paid" onclick="simulatePaid()">I've paid (demo)</button>
+      </div>
+    </div>
+  `;
+
+        drawQR('qrisImg', orderId);
+        $('#checkoutModal').classList.add('show');
+
+        // payment methods
+        $$('#payMethods .pay-method').forEach(el => {
+            el.addEventListener('click', () => {
+                $$('#payMethods .pay-method').forEach(x=>x.classList.remove('active'));
+                el.classList.add('active');
+                pmActive = el.dataset.pm;
+            });
+        });
+
+        // timer
+        timerSecs = 14*60+32;
+        clearInterval(timerInt);
+        timerInt = setInterval(()=>{
+            timerSecs--;
+            if(timerSecs<=0){clearInterval(timerInt);return}
+            const m = String(Math.floor(timerSecs/60)).padStart(2,'0');
+            const s = String(timerSecs%60).padStart(2,'0');
+            const el = document.getElementById('qrTimer');
+            if(el) el.textContent = `${m}:${s}`;
+        }, 1000);
+    }
+
+    function closeCheckout(){
+        $('#checkoutModal').classList.remove('show');
+        clearInterval(timerInt);
+    }
+
+    function simulatePaid(){
+        const sub = cartSubtotal();
+        const ship = sub >= 200000 ? 0 : 18000;
+        const tot = sub + ship;
+        const items = cartItems();
+        const orderId = 'KN-' + (2000 + Math.floor(Math.random()*900));
+        $('#checkoutCard').innerHTML = `
+    <div class="success-card in-checkout">
+      <div class="success-tick">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12.5 10 17.5 19 7.5"/></svg>
+      </div>
+      <h2>Payment received.</h2>
+      <p>Thanks — your beans will be roasted Tuesday and shipped Wednesday.</p>
+      <div class="success-receipt">
+        <div class="row"><span>Order</span><strong>#${orderId}</strong></div>
+        <div class="row"><span>Method</span><strong>QRIS · ${pmActive.toUpperCase()}</strong></div>
+        <div class="row"><span>Items</span><strong>${cartCount()} × bags</strong></div>
+        <div class="row"><span>Total paid</span><strong>${fmt(tot)}</strong></div>
+        <div class="row"><span>Ships</span><strong>Wed, May 13</strong></div>
+      </div>
+      <button class="checkout-btn" onclick="closeCheckout();cart=[];syncCart();">Back to shop</button>
+    </div>
+  `;
+        clearInterval(timerInt);
+    }
+
+    document.getElementById('demoCheckout').addEventListener('click', ()=>{
+        if(cartCount()===0){ addToCart('gayo'); addToCart('tora'); }
+        setTimeout(openCheckout, 80);
+    });
+
+    // ----- QR drawing (deterministic, decorative) -----
+    function drawQR(targetId, seed){
+        const el = document.getElementById(targetId);
+        if(!el) return;
+        el.innerHTML = '';
+        const N = 33;
+        // Create grid
+        const grid = document.createElement('div');
+        grid.style.cssText = `display:grid;grid-template-columns:repeat(${N},1fr);grid-template-rows:repeat(${N},1fr);gap:0;width:100%;height:100%;`;
+        // PRNG from seed
+        let s = 0; for(let i=0;i<seed.length;i++) s = (s*131 + seed.charCodeAt(i)) >>> 0;
+        const rand = () => { s = (s * 1664525 + 1013904223) >>> 0; return s / 4294967296; };
+        const cells = [];
+        for(let y=0;y<N;y++) for(let x=0;x<N;x++) cells.push({x,y,on: rand()>0.5});
+        // Finder patterns
+        function setFinder(cx,cy){
+            for(let y=0;y<7;y++) for(let x=0;x<7;x++){
+                const xx=cx+x, yy=cy+y; if(xx>=N||yy>=N) continue;
+                const inOuter = (x===0||x===6||y===0||y===6);
+                const inInner = (x>=2&&x<=4&&y>=2&&y<=4);
+                const c = cells.find(c=>c.x===xx && c.y===yy); if(c) c.on = inOuter || inInner;
+            }
+        }
+        setFinder(0,0); setFinder(N-7,0); setFinder(0,N-7);
+        // Render
+        cells.forEach(c => {
+            const d = document.createElement('div');
+            d.style.background = c.on ? '#1f1812' : '#fff';
+            grid.appendChild(d);
+        });
+        el.appendChild(grid);
+        // center logo
+        const logo = document.createElement('div');
+        logo.className = 'qris-img-center';
+        logo.textContent = 'QRIS';
+        el.appendChild(logo);
+    }
+
+    // Phone QR (smaller)
+    (function phoneQR(){
+        const el = document.getElementById('phoneQris');
+        if(!el) return;
+        const N = 21;
+        let s = 7; const rand = ()=>{ s=(s*1664525+1013904223)>>>0; return s/4294967296 };
+        for(let i=0;i<N*N;i++){
+            const d = document.createElement('div');
+            d.style.background = rand()>0.5 ? '#1f1812' : '#fff';
+            el.appendChild(d);
+        }
+    })();
+
+    renderProducts();
+    syncCart();
+</script>
+
+</body>
+</html>
