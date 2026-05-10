@@ -16,6 +16,7 @@
     --gold:#c89b3c;
 }
 *{margin:0;padding:0;box-sizing:border-box}
+html{overflow-x:hidden}
 html,body{background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:clip}
 body::before{
     content:'';position:fixed;inset:0;pointer-events:none;z-index:1;mix-blend-mode:multiply;opacity:.32;
@@ -33,7 +34,7 @@ em{font-style:italic;font-weight:400}
 @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 /* NAV */
-nav.site{position:sticky;top:0;background:rgba(241,234,217,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:16px 36px;display:flex;align-items:center;justify-content:space-between;z-index:1000;transition:box-shadow .25s ease}
+nav.site{position:-webkit-sticky;position:sticky;top:0;background:rgba(241,234,217,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:16px 36px;display:flex;align-items:center;justify-content:space-between;z-index:1000;transition:box-shadow .25s ease}
 nav.site.scrolled{box-shadow:0 6px 24px -12px rgba(31,24,18,.18)}
 .logo{font-family:'Fraunces',serif;font-weight:900;font-size:21px;letter-spacing:-.02em;display:flex;align-items:center;gap:10px}
 .logo-mark{width:30px;height:30px;background:var(--ink);border-radius:50%;position:relative;flex:none}
