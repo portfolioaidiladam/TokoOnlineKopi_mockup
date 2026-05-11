@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b50cae01-a4cc-4e04-bea0-f9c57233d3e9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pricelist-toko-online.css" beforeDir="false" afterPath="$PROJECT_DIR$/pricelist-toko-online.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +79,8 @@
       <workItem from="1778423339643" duration="3681000" />
       <workItem from="1778451338457" duration="555000" />
       <workItem from="1778452044853" duration="299000" />
-      <workItem from="1778453793861" duration="1269000" />
+      <workItem from="1778453793861" duration="1640000" />
+      <workItem from="1778457004946" duration="620000" />
     </task>
     <task id="LOCAL-00001" summary="update jadwal">
       <option name="closed" value="true" />

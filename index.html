@@ -268,7 +268,7 @@
 <aside class="drawer" id="drawer" aria-label="Cart">
     <div class="drawer-head">
         <h3>Your bag <span class="mono bag-count" id="bagCount"></span></h3>
-        <button class="close-btn" onclick="closeCart()">✕</button>
+        <button class="close-btn" id="closeCartBtn" type="button" aria-label="Close cart" onclick="closeCart()">✕</button>
     </div>
     <div class="drawer-body" id="drawerBody"></div>
     <div class="drawer-foot" id="drawerFoot"></div>
@@ -370,6 +370,8 @@
     function closeCart(){ $('#scrim').classList.remove('show'); $('#drawer').classList.remove('open'); }
     $('#openCart').addEventListener('click', ()=>{ openCart(); });
     $('#scrim').addEventListener('click', closeCart);
+    $('#closeCartBtn').addEventListener('click', closeCart);
+    document.addEventListener('keydown', e => { if(e.key === 'Escape' && $('#drawer').classList.contains('open')) closeCart(); });
 
     function renderDrawer(){
         const items = cartItems();
